@@ -1,0 +1,11 @@
+﻿<div class="container-fluid" ng-controller="headlinesController">
+    <div class="row col-xs-12 col-sm-6 col-md-8">
+        <div class="panel panel-default" ng-repeat="h in headlines">
+            <div class="panel-heading">{{h.title}}</div>
+            <div class="panel-body">
+                {{h.description}}
+                <p>By {{h.articleBy}}</p>
+            </div>
+        </div>
+    </div>
+</div>
